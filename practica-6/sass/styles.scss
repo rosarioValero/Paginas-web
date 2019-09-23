@@ -1,0 +1,176 @@
+/*Partials*/
+@import 'styles2';
+
+/*Mixins*/
+@mixin bold($property) {
+    font-weight: $property;
+}
+
+/*Inheritance*/
+%fuente_card {
+    font-size: 18px;
+}
+
+/*menu despeglabe color*/
+/*Hover sobre p*/
+/*hover img*/
+/*Grid*/
+/* Modal mapa*/
+/*Media query version movil*/
+/*Grid indice principal*/
+/*Flex receta*/
+body {
+	padding-left: 2%;
+	padding-right: 2%;
+	font-family: $font_family_1;
+}
+h3 {
+	font-family: $font_family_2;
+	font-size: 32px;
+}
+h4 {
+	font-family: $font_family_3;
+	font-size: 28px;
+	&:hover {
+		font-size: 30px;
+	}
+}
+
+.dropdown-item {
+	&:hover {
+		background-color: $background_color_1;
+		padding: 5%;
+	}
+}
+p {
+	&:hover {
+		font-size: 18px;
+	}
+}
+a {
+	&:hover {
+        color: $color_1;
+        @include bold(bold);
+	}
+}
+h5 {
+	&:hover {
+		font-size: 22px;
+		color: $color_2;
+	}
+}
+img {
+	&:hover {
+		opacity: 0.5;
+		filter: alpha(opacity=100);
+	}
+}
+.grid1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+#card1 {
+	display: grid;
+	grid-column: 1 / 1;
+	grid-row: 1 / 1;
+}
+#card2 {
+	display: grid;
+	grid-column: 2 / 2;
+	grid-row: 1 / 1;
+}
+#card3 {
+	display: grid;
+	grid-column: 3 / 3;
+	grid-row: 1 / 1;
+}
+#card4 {
+	display: grid;
+	grid-column: 4 / 4;
+	grid-row: 1 / 1;
+}
+.map-container-11 {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+	iframe {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+}
+.card1 {
+	background-color: $background_color_1;
+	@extend %fuente_card;
+}
+.card2 {
+	background-color: $background_color_1;
+	@extend %fuente_card;
+}
+.card3 {
+	background-color: $background_color_1;
+	@extend %fuente_card;
+}
+.card4 {
+	background-color: $background_color_1;
+	@extend %fuente_card;
+}
+
+.btn-info {
+	&:hover {
+		background-color: $background_color_1;
+		color: $color_3;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.newsletter {
+		padding-left: 1%;
+	}
+	.imagenCook {
+		padding-top: 3%;
+		width: 100%;
+	}
+	.grid1 {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	#card1 {
+		grid-column: 1 / 1;
+		grid-row: 1 / 2;
+		padding-bottom: 3%;
+	}
+	#card2 {
+		grid-column: 1 / 1;
+		grid-row: 2 / 3;
+		padding-bottom: 3%;
+	}
+	#card3 {
+		grid-column: 1 / 1;
+		grid-row: 3 / 4;
+		padding-bottom: 3%;
+	}
+	#card4 {
+		grid-column: 1 / 1;
+		grid-row: 4 / 4;
+		padding-bottom: 3%;
+	}
+	.flex-row {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	iframe {
+		width: 500px;
+		height: 350px;
+	}
+}
+@media screen and (max-width: 450px) {
+	iframe {
+		width: auto;
+		height: auto;
+	}
+}
