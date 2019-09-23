@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Category</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+    <!--Logo pagina en navegador-->
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/jpg">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1" style="background-color:lavander;">
+                <img style="height:100px;" src="img/logo.jpg">
+            </div>
+
+            <div class="col-sm-2">
+                <h2>Oekaki <span class="badge badge-dark">Shop</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegador -->
+    <div class="navegador sticky-top">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+            <a class="navbar-brand d-none"><img id="prueba" style="height:35px; " src="img/logo.jpg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Books
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="category.html">Bestsellers</a>
+                            <a class="dropdown-item" href="#">Featured Books</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Condition</a>
+                            <a class="dropdown-item" href="#">Theme</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Best-selling books</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Newness
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">What's new with video</a>
+                            <a class="dropdown-item" href="#">New books last month</a>
+                            <a class="dropdown-item" href="#">Upcoming releases books</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">New eBooks last month</a>
+                            <a class="dropdown-item" href="#">Upcoming releases eBooks</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Promotions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Christmas gifts</a>
+                            <a class="dropdown-item" href="#">Disney gift books</a>
+                            <a class="dropdown-item" href="#">Special editions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Best eBooks of the year</a>
+                            <a class="dropdown-item" href="#">Awards 2018 with 5%</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">American comic</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Manga
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Publishing</a>
+                            <a class="dropdown-item" href="#">Authors</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Featured titles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">eBooks</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Merchandising</a>
+                    </li>
+
+
+                    <li class="nav-item pl-2">
+                        <div style="background-color:lavander;">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-5" type="text" placeholder="Search">
+                            </form>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn-ligth"><a href="login_register.html">Login/Register</a></button>
+                    </li>
+
+                    <li class="nav-item pl-4">
+                        <a href="shopping_cart.html"><i class="fas fa-shopping-bag fa-1.5x" style="color:white"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- lugar en el que te encuentras -->
+    <div class="ver_localizacion">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Books</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!--Ver subcategorias-->
+    <div class="menu_subcategorias">
+        <p class="h3 text-danger"><strong>Books</strong></p>
+        <div class="row">
+            <div class="col-md-3 col-sm-4 bg-light pl-5">
+                <ul class="nav flex-column pb-5 pt-3">
+                    <li class="nav-item">
+                        <p class="h6"><u>Featured:</u></p>
+                    <li><a href="#">What's new with video</a></li>
+                    <li><a href="#">New books last month</a></li>
+                    <li><a href="#">Upcoming releases books</a></li>
+                    </li>
+
+                    <li class="nav item pt-3">
+                        <p class="h6"><u>Condition</u></p>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Other sellers</a></li>
+                    <li><a href="#">Free shipping</a></li>
+                    </li>
+
+                    <li class="nav item pt-3">
+                        <p class="h6"><u>Thematic</u></p>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Cooking</a></li>
+                    <li><a href="#">Child-like</a></li>
+                    <li><a href="#">Youthful</a></li>
+                    <li><a href="subcategory.html">Narrative</a></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 pt-3  col-sm-12">
+                <p class="h3 text-dark text-left pb-4"><strong> Recommended news</strong></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="carousel slide" data-ride="carousel">
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#" data-slide-to="0" class="active"></li>
+                                    <li data-target="#" data-slide-to="1"></li>
+                                </ol>
+
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove1.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">ANIMALES FANTASTICOS</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove5.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">ANIMALES FANTASTICOS</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove2.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">SEMPITERNO</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove3.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">EL BOSQUE SABE TU NOMBRE</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove4.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">LA VILLA DE LAS TELAS</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove5.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">ANIMALES FANTASTICOS</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove3.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">LA VOZ DE TU ALMA</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card" style="width: 15rem;">
+                                                    <img class="card-img-top" src="img/nove2.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">ANIMALES FANTASTICOS</h4>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title
+                                                            and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--.row-->
+                                    </div>
+                                    <!--.item-->
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <!--.carousel-inner-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paginador2 pt-4">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Promociones-->
+    <div class="publicidad ">
+        <div class="row justify-content-center pt-5 pb-5">
+            <div id=" promoimg06" class="promoimg06 pt-3">
+                <a href="#" class="">
+                    <img src="img/publi-cat1.jpg" alt="Los mejores precios" title="Los mejores precios">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Editoriales-->
+    <div class="editoriales">
+        <div class="container">
+            <div class="row">
+                <section>
+                    <h4 class="text-left text-warning font-weight-bold pb-5"><strong>Productos Destacados</strong></h4>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="carousel slide" data-ride="carousel">
+
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#" data-slide-to="0" class="active"></li>
+                                        <li data-target="#" data-slide-to="1"></li>
+                                    </ol>
+
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit1.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit2.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit3.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit4.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--.row-->
+                                        </div>
+                                        <!--.item-->
+
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit5.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit6.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit7.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a href="#">
+                                                        <img src="img/edit1.jpg" alt="Image" style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--.row-->
+                                        </div>
+                                        <!--.item-->
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    <!--.carousel-inner-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark">
+        <div style="background-color: #6351ce;">
+            <div class="container">
+                <!-- Grid row-->
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5 pt-4">
+
+            <!-- Grid row -->
+            <div class="row mt-3 text-white">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-white">
+
+                    <h6 class="text-uppercase font-weight-bold">Links of interest</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Who we are ?</a>
+                    </p>
+                    <p>
+                        <a href="#!">Cookie policy</a>
+                    </p>
+                    <p>
+                        <a href="#!">Privacy policy</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-white">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Newsletter</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <form>
+                        <input type="text" class="form-control" placeholder="Correo electrónico">
+                        <div class="form-check pt-2 pb-2">
+                            <input type="checkbox" class="form-check-input" name="news" id="news" value="1">
+                            <label for="news" class="form-check-label">I have read and accept the privacy policy</label>
+                            <input type="checkbox" class="form-check-input pt-1" name="news" id="news" value="2">
+                            <label for="news" class="form-check-label">Receive news</label>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary mb-2">submit</button>
+                </div>
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-white">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+
+                    <div id="map-container-google-1" class="z-depth-1-half map-container">
+                        <iframe src="https://maps.google.com/maps?q=poligono son castello&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-white">© 2018 Copyright
+            <div class="row py-4 d-flex align-items-center">
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right text-white">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+                    </a>
+
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                        <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
